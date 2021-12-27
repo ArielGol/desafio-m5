@@ -23,7 +23,7 @@ URL del desafío: [Desafío módulo 5: Piedra, Papel o Tijeras](https://arielgol
 
    Contiene el atributo `action` para identificar el tipo de acción que se realizará (piedra, papel o tijeras).
    
-   URL para realizar los [sprites para las animaciones] (https://www.codeandweb.com/free-sprite-sheet-packer) 
+   URL para realizar los [sprites para las animaciones](https://www.codeandweb.com/free-sprite-sheet-packer) 
 
 1. Raven-intro
 1. Raven-lost
