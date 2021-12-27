@@ -5,7 +5,11 @@ URL del desafío: [Desafío módulo 5: Piedra, Papel o Tijeras](https://arielgol
 
 Buenas como están, les dejo el desafío final del módulo use sprites animaciones hecho a ojimetro de los **Teen Titans GO** . 
 
-### Components
+Nos vemos
+
+Ariel Golubickas (ArielGol)
+
+### Componentes
 
 1. Button
 
