@@ -3,6 +3,8 @@
 URL del desafío: [Desafío módulo 5: Piedra, Papel o Tijeras](https://arielgol.github.io/desafio-m5/
 )
 
+Buenas como están, les dejo el desafío final del módulo use sprites animaciones hecho a ojimetro de los **Teen Titans GO** . 
+
 ### Components
 
 1. Button
@@ -11,7 +13,7 @@ URL del desafío: [Desafío módulo 5: Piedra, Papel o Tijeras](https://arielgol
 
 1. Countdown-timer
 
-   Contiene los atributos `seconds` para configurar la cantidad de segundos total que queremos, `warning` para configurar advertir que quedan pocos segundos, y `alert` para alertar cuando falta para que se acaba el tiempo.
+   Contiene los atributos `seconds` para configurar la cantidad de segundos totales que queremos, `warning` para advertir que quedan pocos segundos, y `alert` para alertar cuanto falta para que se acaba el tiempo.
    
    URL [tutorial](https://css-tricks.com/how-to-create-an-animated-countdown-timer-with-html-css-and-javascript/) para realizar el componente.
 
