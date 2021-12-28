@@ -19,9 +19,45 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 115px;
+  gap: 100px;
   margin: 0 auto;
   max-width: 400px;
+}
+
+@media(min-height: 625px) {
+  .container_welcome {
+    gap: 115px;
+  }
+}
+
+@media(min-height:667px) {
+  .container_welcome {
+    gap: 128px;
+  }
+}
+
+@media(min-height:736px) {
+  .container_welcome {
+    gap: 153px;
+  }
+}
+
+@media(min-height:812px) {
+  .container_welcome {
+    gap: 182px;
+  }
+}
+
+@media(min-height:1024px) {
+  .container_welcome {
+    gap: 265px;
+  }
+}
+
+@media(min-height:1280px) {
+  .container_welcome {
+    gap: 390px;
+  }
 }
 
 
@@ -36,16 +72,26 @@ body {
   width: 188px;
   height: 70px;
   position: absolute;
-  top: 73%;
+  top: 71%;
   left: 50%;
 }
+
+@media(min-height:667px) {
+  .container-image_welcome {
+
+    top: 64%;
+  }
+}
+
 
 @media(min-width: 768px) {
   .container-image_welcome {
     transform: translate(-50%, -50%) scale(0.6);
-    top: 71%;
   }
 }
+
+
+
 
 
 /*GAME INSTRUCTIONS 1*/

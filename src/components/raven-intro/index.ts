@@ -14,7 +14,7 @@ class AnimationRaven extends HTMLElement {
     style.innerHTML = `
       .wrapper {
         position: absolute;
-        top:59%;
+        top:54%;
         left:50%;
         background: transparent url(${imageURL}) 0 0 no-repeat;
         transform: translate(-50%, -50%) scale(0.5);
@@ -28,6 +28,7 @@ class AnimationRaven extends HTMLElement {
           background-position: -1501px, 0;
         }
       }
+      
       
       `;
     container.appendChild(style);

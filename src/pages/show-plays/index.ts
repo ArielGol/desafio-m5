@@ -22,14 +22,6 @@ export function initShowPlaysPage(params) {
   const computerChoice = state.getState().currentGame.computerPlay;
   const computerImg = divEL.querySelector(".computer-img") as any;
   const computerImgWin = divEL.querySelector(".computer-img--win") as any;
-  /*if (computerChoice === "piedra") {
-    computerImg.src = piedraUrl;
-  } else if (computerChoice === "papel") {
-    computerImg.src = papelUrl;
-  } else {
-    computerImg.src = tijerasUrl;
-  }*/
-  //raven-fire
   const playerChoice = state.getState().currentGame.myPlay;
   const ravenFireEl = divEL.querySelector(".raven-fire") as any;
   const ravenLostEl = divEL.querySelector(".raven-lost") as any;
@@ -43,23 +35,32 @@ export function initShowPlaysPage(params) {
     ravenFireEl.setAttribute("action", "tijeras");
     computerImg.src = papelUrl;
   } else if (playerChoice === "piedra" && computerChoice === "papel") {
-    ravenLostEl.style.display = "block";
-    ravenFireEl.style.display = "none";
-    computerImg.style.display = "none";
-    computerImgWin.style.display = "block";
+    ravenFireEl.setAttribute("action", "piedra");
     computerImgWin.src = papelUrl;
+    setTimeout(() => {
+      ravenLostEl.style.display = "block";
+      ravenFireEl.style.display = "none";
+      computerImg.style.display = "none";
+      computerImgWin.style.display = "block";
+    }, 7000);
   } else if (playerChoice === "papel" && computerChoice === "tijeras") {
-    ravenLostEl.style.display = "block";
-    ravenFireEl.style.display = "none";
-    computerImg.style.display = "none";
-    computerImgWin.style.display = "block";
+    ravenFireEl.setAttribute("action", "papel");
     computerImgWin.src = tijerasUrl;
+    setTimeout(() => {
+      ravenLostEl.style.display = "block";
+      ravenFireEl.style.display = "none";
+      computerImg.style.display = "none";
+      computerImgWin.style.display = "block";
+    }, 7000);
   } else if (playerChoice === "tijeras" && computerChoice === "piedra") {
-    ravenLostEl.style.display = "block";
-    ravenFireEl.style.display = "none";
-    computerImg.style.display = "none";
-    computerImgWin.style.display = "block";
+    ravenFireEl.setAttribute("action", "tijeras");
     computerImgWin.src = piedraUrl;
+    setTimeout(() => {
+      ravenLostEl.style.display = "block";
+      ravenFireEl.style.display = "none";
+      computerImg.style.display = "none";
+      computerImgWin.style.display = "block";
+    }, 7000);
   } else if (playerChoice === "piedra" && computerChoice === "piedra") {
     ravenFireEl.setAttribute("action", "piedra");
     computerImg.style.display = "none";
@@ -98,7 +99,7 @@ export function initShowPlaysPage(params) {
   function goToResults() {
     setTimeout(() => {
       params.goTo("/results");
-    }, 7000);
+    }, 9000);
   }
   goToResults();
 
